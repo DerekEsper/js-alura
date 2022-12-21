@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa</title>
+    <canvas width="600" height="400"></canvas>
+</head>
+
+<body>
+</body>
+
+<script>
+
+    var tela = document.querySelector('canvas'); // TELA BUSCA O CANVAS PRA MIM
+    var pincel = tela.getContext('2d'); // TELA USE O CONTEXTO 2D 3D
+
+    pincel.fillStyle = 'lightgrey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    pincel.fillStyle = 'lightblue';
+    pincel.fillRect(0, 0, 200, 400);
+
+    pincel.fillStyle = 'lightpink';
+    pincel.fillRect(400, 0, 200, 400);
+
+    pincel.fillStyle = 'purple';
+    pincel.beginPath(); // INICIA UM CAMINHO
+    pincel.moveTo(300, 200); // MOVE O INICIO PARA O CENTRO DO CANVAS
+    pincel.lineTo(200, 400);
+    pincel.lineTo(400, 400);
+    pincel.fill();
+
+	 pincel.fillStyle = 'yellow';
+	 pincel.beginPath();
+	 pincel.arc(300, 200, 25,  0, 2 * 3.14);
+	 pincel.fill();
+
+</script>
+
+
+</html>

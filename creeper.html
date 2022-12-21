@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creep</title>
+    <canvas width= "600" height="400"></canvas>
+</head>
+<body>    
+</body>
+
+<script>
+
+    var tela = document.querySelector('canvas'); // TELA BUSCA O CANVAS PRA MIM
+    var pincel = tela.getContext('2d'); // TELA USE O CONTEXTO 2D 3D
+
+    pincel.fillStyle = 'darkgreen';
+    pincel.fillRect(0, 0, 350, 300) // 1
+
+    pincel.fillStyle = 'black';    
+    pincel.beginPath();
+    pincel.fillRect(50, 60, 90, 90); // 2
+    pincel.fillRect(210, 60, 90, 90); // 3
+    pincel.fillRect(140, 150, 70, 100); // 4
+    pincel.fillRect(100, 190, 40, 110); // 5
+    pincel.fillRect(210, 190, 40, 110); // 6
+
+    pincel.fill();
+
+
+    
+</script>
+</html>
